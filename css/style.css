@@ -1,0 +1,263 @@
+/* Start global rules */
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/* End global rules */
+/* Start variables */
+:root {
+    /* Colors */
+    --primary-color : #ee5057;
+    --secoundaty-color : black;
+    --text-color : #898989;
+    /* Fonts */
+    --text-size : 13px;
+    --title-size : 20px;
+    --section-title-size: 50px
+}
+/* End variables */
+
+/* Start navbar */
+.navbar .nav-item{
+    padding:0px 100px;
+}
+.navbar .nav-link:hover{
+    margin: 0px 10px ;
+    padding: 15px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+    color: black;
+    transition: 0.7s;
+}
+/* End navbar */
+
+/* start body */
+.hero{
+    background-image: url(../img/bg-img-1.jpg);
+    background-repeat: no-repeat;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-content {
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.form-groupe {
+    flex: 1 25%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+form i{
+    color: var(--primary-color);
+    font-size: var(--title-size);
+    position: absolute;
+    left: 10px;
+}
+
+.form-groupe input,
+.form-groupe select{
+    padding: 15px;
+    padding-left: 40px;
+}
+
+.form-groupe .btn-primary{
+    border-radius: 0;
+    background-color: var(--primary-color);
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.help{
+    background-color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+/* Start Sections */
+.main {
+    background-color: var(--primary-color);
+    padding: 50px 0;
+}
+.section-content {
+    text-align: center;
+    color: white;
+}
+
+.btn-white{
+    color: white;
+    background-color: var(--primary-color);
+    border: 1px solid white;
+    transition: 0.9s;
+}
+.btn-white:hover{
+    border: none;
+    font-size: larger;
+}
+
+.wave {
+    position: relative;
+    margin-bottom: 250px;
+
+}
+
+.wave img{
+    position: absolute;
+    top: -50px;
+    width: 100%;
+
+}
+/* End Sections */
+
+/* Start servises */
+.servises{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    align-items: center;
+    column-gap: 150px;
+    row-gap: 50px;
+    margin-top: 50px;
+}
+
+
+.servises .servise{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in;
+    padding: 10px;
+   
+}
+.servises .servise:hover{
+    scale: 1.1;
+    box-shadow: 0 0 7px rgb(98, 98, 98);
+}
+.servise i{
+    color:var(--primary-color) ;
+    font-size: 100px;
+    padding: 15px;
+}
+/* End servises */
+
+
+/* Start slider */
+.section-gray{
+    background-color: #fafafa;
+    margin-top: 50px;
+}
+.section-gray .container{
+    display: grid;
+    grid-template-columns: 700px 300px;
+    column-gap: 20px;
+}
+.slider{
+    background-color: white;
+   
+}
+.slider-item{
+    
+}
+.slider-item img{
+    width: 100%;
+}
+
+.slider-content{
+    padding: 25px;
+    text-align: center;
+}
+.slider-content h3{
+    color: var(--primary-color);
+}
+/* End slider */
+
+/* Start Side */
+.side{
+    background-color: white;
+    max-height: 550px;
+}
+.side-header{
+    background-color: var(--primary-color);
+    padding: 10px;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+.side-body{
+    padding: 25px;
+}
+.side-body a{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+    transition: all .2s ease-in;
+}
+.side-body a:hover{
+    background-color: aliceblue;
+}
+/* End Slide */
+
+/* Video part */
+
+.overlay{
+    position: absolute;
+    background-color: rgb(0 0 0 / 50%);
+    width: 100%;
+    height: 515px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay i {
+    color: white;
+    font-size: xxx-large;
+    cursor: pointer;
+}
+
+.fa-pause-circle{
+    display: none;
+}
+
+.video-container{
+    overflow: hidden;
+    width: 100%;
+    height: 515px;
+    position: relative;
+}
+.video-container video{
+    width: 100%;
+    overflow: hidden;
+}
+/* End video */
+
+/* Start contact */
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 25px;
+    margin: 50px;
+}
+
+.contact form .form-groupe{
+    margin-bottom: 10px;
+}
